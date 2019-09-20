@@ -63,7 +63,7 @@
 <meta property="og:site_name" content="小强哥的博客">
 <meta property="og:description" content="动态连接 并查集 Union command 连接两个物体  网络，社交网络，  实现查找和合并1234567public class UF&amp;#123;    UF(int N) // 初始化并查集    void union(int p,int q) //在p和q之间添加分量    boolean connected(int p, int q) //p和q之间连通吗？&amp;#125;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-20T12:02:38.950Z">
+<meta property="og:updated_time" content="2019-09-20T12:04:34.675Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法笔记一">
 <meta name="twitter:description" content="动态连接 并查集 Union command 连接两个物体  网络，社交网络，  实现查找和合并1234567public class UF&amp;#123;    UF(int N) // 初始化并查集    void union(int p,int q) //在p和q之间添加分量    boolean connected(int p, int q) //p和q之间连通吗？&amp;#125;">
@@ -239,7 +239,7 @@
                 
               
 
-              <time title="创建时间：2019-09-20 10:16:24 / 修改时间：20:02:38" itemprop="dateCreated datePublished" datetime="2019-09-20T10:16:24+08:00">2019-09-20</time>
+              <time title="创建时间：2019-09-20 10:16:24 / 修改时间：20:04:34" itemprop="dateCreated datePublished" datetime="2019-09-20T10:16:24+08:00">2019-09-20</time>
             </span>
           
             
@@ -311,7 +311,10 @@
 <ul>
 <li>add second loop to root() to set the id[] of each examined node to the root.</li>
 </ul>
-<p>Simpler one-pass variant<br>-Make every other node in path point to its grandparent(thereby halving path length)</p>
+<p>Simpler one-pass variant</p>
+<ul>
+<li>Make every other node in path point to its grandparent(thereby halving path length)</li>
+</ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">root</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(i != id[i])&#123;</span><br><span class="line">        id[i] = id[id[i]];</span><br><span class="line">        i = id[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
