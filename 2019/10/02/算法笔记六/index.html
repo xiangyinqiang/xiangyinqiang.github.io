@@ -72,7 +72,7 @@
 <meta property="og:image" content="http://yoursite.com/images/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E5%85%AD/7.png">
 <meta property="og:image" content="http://yoursite.com/images/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E5%85%AD/8.png">
 <meta property="og:image" content="http://yoursite.com/images/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E5%85%AD/9.png">
-<meta property="og:updated_time" content="2019-10-13T14:02:01.119Z">
+<meta property="og:updated_time" content="2019-10-13T14:09:17.258Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法笔记六">
 <meta name="twitter:description" content="优先队列和堆排优先队列定义：可以移除最大或最小的元素。API：插入，删除，是否为空，大小应用：数值计算，数据压缩，图搜索，人工智能，统计学，操作系统，离散优化，垃圾过滤初级实现：数组实现(无序)，数组实现(有序)，链表实现。二叉堆数组实现，实际上并没有显式的连接。堆有序：当一棵二叉树的每个节点都大于等于它的两个子节点时，它被称为堆有序。根节点是堆有序的二叉树中的最大节点。二叉堆是一组能够用堆有序的">
@@ -260,7 +260,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-13 22:02:01" itemprop="dateModified" datetime="2019-10-13T22:02:01+08:00">2019-10-13</time>
+                <time title="修改时间：2019-10-13 22:09:17" itemprop="dateModified" datetime="2019-10-13T22:09:17+08:00">2019-10-13</time>
               </span>
             
           
@@ -301,10 +301,12 @@
 
 <p>Java 实现</p>
 <p><img src="/images/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E5%85%AD/9.png" alt="notes"></p>
-<h3 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h3><p>利用优先队列可以进行排序方法。堆排序分为两个阶段。</p>
+<h3 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h3><p>利用优先队列可以进行排序方法。堆排序分为两个阶段</p>
 <ul>
-<li>在堆的构造阶段，我们将原始数组重新组织安排进一个堆中。</li>
-<li>下沉阶段，我们从堆中按递减顺序取出所有元素并得到排序结果。</li>
+<li><p>在堆的构造阶段，我们将原始数组重新组织安排进一个堆中。</p>
+</li>
+<li><p>下沉阶段，我们从堆中按递减顺序取出所有元素并得到排序结果。</p>
+</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(Comparable[] a)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> N = a.length;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> k = N/<span class="number">2</span>;k &gt;=<span class="number">1</span>;k--)&#123;</span><br><span class="line">        sink(a,k,N);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(N &gt; <span class="number">1</span>)&#123;</span><br><span class="line">        exch(a,<span class="number">1</span>,N--);</span><br><span class="line">        sink(a,<span class="number">1</span>,N);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -352,10 +354,6 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/10/03/算法笔记七/" rel="prev" title="算法笔记七">
-                  算法笔记七 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -422,7 +420,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
