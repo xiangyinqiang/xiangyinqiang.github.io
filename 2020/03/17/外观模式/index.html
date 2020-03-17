@@ -64,7 +64,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/facade1.png">
 <meta property="og:image" content="http://yoursite.com/images/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/facade.png">
-<meta property="og:updated_time" content="2020-03-17T06:19:12.193Z">
+<meta property="og:updated_time" content="2020-03-17T06:38:06.049Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="外观模式">
 <meta name="twitter:description" content="外观模式影院管理项目组建一个家庭影院： DVD播放器、投影仪、自动屏幕、环绕立体声、爆米花机,要求完成使用家庭影院的功能，其过程为： 直接用遥控器：统筹各设备开关 开爆米花机 放下屏幕 开投影仪 开音响 开DVD，选dvd 去拿爆米花 调暗灯光 播放 观影结束后，关闭各种设备 传统方式解决影院管理传统方式解决影院管理问题分析">
@@ -241,7 +241,7 @@
                 
               
 
-              <time title="创建时间：2020-03-17 14:17:52 / 修改时间：14:19:12" itemprop="dateCreated datePublished" datetime="2020-03-17T14:17:52+08:00">2020-03-17</time>
+              <time title="创建时间：2020-03-17 14:17:52 / 修改时间：14:38:06" itemprop="dateCreated datePublished" datetime="2020-03-17T14:17:52+08:00">2020-03-17</time>
             </span>
           
             
@@ -271,11 +271,11 @@
 <li>调暗灯光</li>
 <li>播放</li>
 <li>观影结束后，关闭各种设备</li>
-</ul><h2 id="传统方式解决影院管理"><a href="#传统方式解决影院管理" class="headerlink" title="传统方式解决影院管理"></a>传统方式解决影院管理</h2><h2 id="传统方式解决影院管理问题分析"><a href="#传统方式解决影院管理问题分析" class="headerlink" title="传统方式解决影院管理问题分析"></a>传统方式解决影院管理问题分析</h2><a id="more"></a>
+</ul><h2 id="传统方式解决影院管理"><a href="#传统方式解决影院管理" class="headerlink" title="传统方式解决影院管理"></a>传统方式解决影院管理</h2><p><img src="/images/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/facade1.png" alt="notes"></p><h2 id="传统方式解决影院管理问题分析"><a href="#传统方式解决影院管理问题分析" class="headerlink" title="传统方式解决影院管理问题分析"></a>传统方式解决影院管理问题分析</h2><a id="more"></a>
+
 
 <p>传统方式解决影院管理问题分析</p>
 <p>1) 在ClientTest的main方法中，创建各个子系统的对象，并直接去调用子系统(对象)相关方法，会造成调用过程混乱，没有清晰的过程<br>2) 不利于在ClientTest 中，去维护对子系统的操作<br>3) 解决思路：定义一个高层接口，给子系统中的一组接口提供一个一致的界面(比如在高层接口提供四个方法 ready, play, pause, end )，用来访问子系统中的一群接口<br>4) 也就是说 就是通过定义一个一致的接口(界面类)，用以屏蔽内部子系统的细节，使得调用端只需跟这个接口发生调用，而无需关心这个子系统的内部细节 =&gt; 外观模式</p>
-<p><img src="/images/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/facade1.png" alt="notes"></p>
 <h2 id="外观模式基本介绍"><a href="#外观模式基本介绍" class="headerlink" title="外观模式基本介绍"></a>外观模式基本介绍</h2><p>基本介绍</p>
 <p>1) 外观模式（Facade），也叫“过程模式：外观模式为子系统中的一组接口提供一个一致的界面，此模式定义了一个高层接口，这个接口使得这一子系统更加 容易使用<br>2) 外观模式通过定义一个一致的接口，用以屏蔽内部子系统的细节，使得调用端只需跟这个接口发生调用，而无需关心这个子系统的内部细节</p>
 <h2 id="外观模式解决影院管理"><a href="#外观模式解决影院管理" class="headerlink" title="外观模式解决影院管理"></a>外观模式解决影院管理</h2><p>传统方式解决影院管理说明</p>
